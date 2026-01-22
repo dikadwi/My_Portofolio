@@ -566,7 +566,46 @@ a {
     font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
-    flex-grow: 1;
+    flex-grow: 0;
+}
+
+.project-features {
+    background: var(--bg-secondary);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.features-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.features-list li {
+    font-size: 13px;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.features-list i {
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .project-tech {
@@ -574,6 +613,7 @@ a {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    flex-grow: 1;
 }
 
 .tech-badge {
