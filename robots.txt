@@ -1,0 +1,22 @@
+# robots.txt for Andika Dwi Arko Portofolio
+# Allow search engines to crawl the website
+
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /assets/
+Disallow: /admin/
+Disallow: /*.json$
+
+# Specific search engine rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay to prevent server overload
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://dikadwi.github.io/My_Portofolio/sitemap.xml

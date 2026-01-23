@@ -48,6 +48,35 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
+/* ==================== Image Optimization ==================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+img[loading="lazy"] {
+    background: var(--bg-secondary);
+}
+
+/* ==================== Accessibility ==================== */
+:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--primary-color);
+}
+
+/* Prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
 a {
     text-decoration: none;
     color: inherit;
